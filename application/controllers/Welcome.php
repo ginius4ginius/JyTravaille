@@ -20,6 +20,13 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+
 	}
+	function salut($var){
+		$table['titre']= $var;
+ 	 $this->load->view('Welcome',$table);
+	}
+
+
+
 }
